@@ -5,17 +5,17 @@ function Quiz(questions) {
 }
 
 Quiz.prototype.getQuestionIndex = function() {
-    return thos.questions[this.questionIndex];
+    return this.questions[this.questionIndex];
 }
 
 Quiz.prototype.isEnded = function() {
-    return thos.questions.length === this.questionIndex;
+    return this.questions.length === this.questionIndex;
 }
 
-Quiz.prototype.guess = function() {
+Quiz.prototype.guess = function(answer) {
     this.questionIndex++;
 
     if (this.getQuestionIndex().correctAnswer(answer)) {
-        this.correct++;
+        this.score++;
     }
 }

@@ -1,16 +1,16 @@
 function populate() {
     if (quiz.isEnded()) {
-        //showScores();
+        showScores();
     } else {
         //show question
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
 
         //show choices
-        varchoices = quiz.getQuestionIndex().choices;
+        var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
-            element.innerHTML = choices(i);
+            element.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
 
@@ -30,7 +30,7 @@ function guess(id, guess) {
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
-    element.innerHTML = "Question" + currentQuestionNumber + "of" + quiz.questions.length;
+    element.innerHTML = "Question " + currentQuestionNumber + "of " + quiz.questions.length;
 };
 
 function showScores() {
@@ -41,12 +41,12 @@ function showScores() {
 };
 
 
-var question = [
-    new Questions("Question1", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
-    new Questions("Question2", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
-    new Questions("Question3", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
-    new Questions("Question4", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
-    new Questions("Question5", ["choice1", "choice2", "choice3", "choice4"], "choice1")
+var questions = [
+    new Question("Question1", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
+    new Question("Question2", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
+    new Question("Question3", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
+    new Question("Question4", ["choice1", "choice2", "choice3", "choice4"], "choice1"),
+    new Question("Question5", ["choice1", "choice2", "choice3", "choice4"], "choice1")
 ];
 
 var quiz = new Quiz(questions);
