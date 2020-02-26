@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FirstPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/quiz_style.css">
+
+</head>
+
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#">Quizz.com</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">1st Grade</a></li>
+            <li><a href="#">2nd Grade</a></li>
+            <li><a href="#">3rd Grade</a></li>
+            <li><a href="#">4th Grade</a></li>
+            <li><a href="">Signout</a></li>
+        </ul>
+    </div>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Question </h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+
+
+                <li> <button id="btn0">answer1<span id="choice0"></span></button> </li>
+                <li><button id="btn1">answer2<span id="choice1"></span></button> </li>
+                <li><button id="btn2">answer3<span id="choice2"></span></button> </li>
+                <li><button id="btn3">answer4<span id="choice3"></span></button> </li>
+
+            </div>
+
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    <Script src="quiz_controller.js"></Script>
+    <Script src="question.js"></Script>
+    <Script src="app.js"></Script>
+</body>
+
+</html>

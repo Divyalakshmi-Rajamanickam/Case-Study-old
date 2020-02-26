@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url(../Images/img1.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center;*/
+    /* font-family: sans-serif;*/
+    padding: 25px;
+    background-size: 800px 600px;
+}
+
+#img {
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.menu-bar {
+    background: #4CAF50;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: rgba(0, 100, 0);
+    border-radius: 3px;
+}
+
+.user-login {
+    float: right;
+    display: grid;
+    /* single column layout */
+    grid-template-columns: 1fr;
+    /* have some gap in between elements*/
+    grid-gap: 50px;
+    padding: 9% 5%;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/*set a style for the buttons*/
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}

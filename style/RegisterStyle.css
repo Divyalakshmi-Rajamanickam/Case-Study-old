@@ -1,0 +1,78 @@
+body {
+    background-color: whitesmoke;
+    font: 1em/1.5 sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(6, 116, 9);
+}
+
+form {
+    margin: 20px auto;
+    width: 320px;
+    color: rgb(6, 116, 9);
+}
+
+input {
+    padding: 10px;
+    font-size: inherit;
+}
+
+input[type="text"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid rgb(6, 116, 9);
+    background-color: beige;
+}
+
+input[type="email"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid rgb(6, 116, 9);
+    background-color: beige;
+}
+
+input[type="password"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid rgb(6, 116, 9);
+    background-color: beige;
+}
+
+input[type="radio"] {
+    margin: 0 8px 25px 18px;
+}
+
+input[type="radio"]:first-child {
+    margin-left: 0;
+}
+
+input[type="submit"] {
+    width: 344px;
+    height: 45px;
+    border: none;
+    background: rgb(6, 116, 9);
+    color: white;
+}
+
+input[type="submit"]:focus {
+    width: 344px;
+    height: 45px;
+    border: solid rgb(6, 116, 9);
+    background: whitesmoke;
+    color: solid rgb(6, 116, 9);
+}
+
+input:focus {
+    background-color: white;
+}
+
+input[type="radio"]:checked+label {
+    font-weight: bold;
+    font-size: 18px;
+}
